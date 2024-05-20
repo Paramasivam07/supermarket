@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freshmart.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body> 
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-shopping-basket"> fresh Mart</i></a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#features">Features</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#products">Products</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#categories">Categories</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#review">Review</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label> 
+        </form>
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i> 
+                <img src="img-1.jpg" alt="">
+                <div class="content">
+                    <h3>Watermelon</h3>
+                    <span class="price"> ₹ 90/-</span>
+                    <span class="quantity">Per kg</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-trash"></i> 
+                <img src="img-2.jpg" alt="">
+                <div class="content">
+                    <h3>Onion</h3>
+                    <span class="price">₹ 140/-</span>
+                    <span class="quantity">Per kg</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-trash"></i> 
+                <img src="img-3.jpg" alt="">
+                <div class="content">
+                    <h3>Chicken</h3>
+                    <span class="price">₹ 420/-</span>
+                    <span class="quantity">Per kg</span>
+                </div>
+            </div>
+            <div class="total">Total : ₹ 650/- </div>
+            <a href="#" class="btn">checkout</a>
+        </div>
+
+        <form action="" class="login-form">
+            <div class="container">
+                <div id="tabs">
+                    <p id="rt" class="tabs" onclick="regtab()">Register</p>
+                    <p id="lt" class="tabs" onclick="logintab()">Log in</p>
+                </div>
+                <div class="scont">
+                    <div id="login" class="com">
+                        <h1 class="l1">Login Page</h1>
+                        <input type="text" placeholder="Enter Your Email" id="se" required>
+                        <input type="password" placeholder="Enter Your password" id="sp" required>
+                        <input type="submit" class="sub" value="submit" onclick="login()">
+                        <a href="#" class="fp" onclick="forgot()">Forgot Password</a>
+                    </div>
+                    <div id="register" class="com">
+                        <h1 class="r1">Register Page</h1>
+                        <input type="email" placeholder="Enter Your Email" id="re" required>
+                        <input type="password" placeholder="Enter New password" id="rp" required>
+                        <input type="password" placeholder="Enter Conform password" id="rrp" required>
+                        <input type="submit" class="sub" value="submit" onclick="register()">
+                    </div>
+                    <div id="forgot" class="com">
+                        <h1 class="fp1">Forgot Password</h1>
+                        <input type="email" placeholder="Enter Your Email" id="fe" required>
+                        <input type="submit" class="sub" value="submit" onclick="forgotpass()">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </header>
+
+<section class="home" id="home">
+    <div class="content">
+        <h3>fresh and <span>organic</span> Products for <span>your</span></h3>
+        <p>fresh mart First Hyper Market Retail Stores Chain. fresh mart Online Shopping in India..</p>
+        <a href="#" class="btn">shop now</a>
+    </div>
+</section>
+
+
+
+<section class="features" id="features">
+    <h1 class="heading">our <span>features</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="fut 1.jpg" alt="">
+            <h3>fresh vegetables</h3>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="cat-2.jpg" alt="">
+            <h3>fresh fruits</h3>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="fut-5.jpg" alt="">
+            <h3>free delivery</h3>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="fut 2.jpg" alt="">
+            <h3>easy payments</h3>
+            <a href="#" class="btn">read more</a>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="products" id="products">
+    <h1 class="heading">our <span>products</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="pro-1.jpg" alt="">
+            <h3>fresh orange</h3>
+            <p>₹ 120/- - 180/- per kg</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="pro-2.jpg" alt="">
+            <h3>Fresh Apple</h3>
+            <p>₹ 220/- - 350/- Per Kg</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="pro-3.jpg" alt="">
+            <h3>Fresh Mango</h3>
+            <p>₹ 170/- - 250/- Per Kg</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="pro-4.jpg" alt="">
+            <h3>Fresh Strawberry</h3>
+            <p>₹ 350/- - 480/- Per Kg</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+</section>
+
+
+<section class="products" id="products">
+        <div class="box-container">
+        <div class="box">
+            <img src="pro-5.jpg" alt="">
+            <h3>Fresh Onion</h3>
+            <p>₹ 80/- - 160/- Per Kg</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="pro-6.jpg" alt="">
+            <h3>Fresh Cabbage</h3>
+            <p>₹ 60/- - 130/- Per Kg</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="pro-7.jpg" alt="">
+            <h3>Fresh Meat</h3>
+            <p>₹ 290/- - 360/- Per Kg</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="pro-8.jpg" alt="">
+            <h3>Fresh Potato</h3>
+            <p>₹ 80/- - 140/- Per Kg</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+</section>
+
+<section class="products" id="products">
+    <div class="box-container">
+        <div class="box">
+            <img src="pro-9.jpg" alt="">
+            <h3>Fresh Avocado</h3>
+            <p>₹ 80/- - 160/- Per Kg</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="pro-10.jpg" alt="">
+            <h3>Fresh Lemon</h3>
+            <p>₹ 20/- - 60/- Per Kg</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="pro-11.jpg" alt="">
+            <h3>Fresh Carrot</h3>
+            <p>₹ 140/- - 220/- Per Kg</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="pro-12.jpg" alt="">
+            <h3>Fresh Tomato</h3>
+            <p>₹ 160/- - 220/- Per Kg</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+</section>
+
+
+<section class="products" id="products">
+    <div class="box-container">
+        <div class="box">
+            <img src="pro-13.jpg" alt="">
+            <h3>Fresh Cauliflower</h3>
+            <p>₹ 120/- - 240/- Per Kg</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="pro-14.jpg" alt="">
+            <h3>Fresh Ladies's Fingers</h3>
+            <p>₹ 40/- - 120/- Per Kg</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="pro-15.jpg" alt="">
+            <h3>Fresh Drumstick</h3>
+            <p>₹ 60/- - 120/- Per Kg</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="pro-16.jpg" alt="">
+            <h3>mushroom</h3>
+            <p>₹ 450/- - 680/- per kg</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+</section>
+
+
+
+
+<section class="categories" id="categories">
+    <h1 class="heading">our <span>categories</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="cat-1.jpg" alt="">
+            <h3>vegetables</h3>
+            <p>upto 20% offer</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="cat-2.jpg" alt="">
+            <h3>fresh fruits</h3>
+            <p>upto 15% offer</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="cat-5.jpg" alt="">
+            <h3>dairy products</h3>
+            <p>upto 30% offer</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="cat-4.jpg" alt="">
+            <h3>fresh meat</h3>
+            <p>upto 45% offer</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="review" id="review">
+    <h1 class="heading">customer's <span>review</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="pic-6.jpg" alt="">
+            <h3>Devin </h3>
+            <p>from mumbai</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="pic-7.jpg" alt="">
+            <h3>laurent</h3>
+            <p>from pune</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="pic-8.jpg" alt="">
+            <h3>aaron</h3>
+            <p>from hyderabad</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="pic-4.jpg" alt="">
+            <h3>louis</h3>
+            <p>from ahmedabad</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">read more</a>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>fresh mart <i class="fas fa-shopping-basket"></i></h3>
+            <p>fresh mart First Hyper Market Retail Stores Chain. fresh mart Online Shopping in India..</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +91 9786852160</a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> 044 24318542</a>
+            <a href="#" class="links"><i class="fas fa-envelope"></i> info@freshmart.com</a>
+            <a href="#" class="links"><i class="fas fa-map-marker-alt"></i> India - chennai -600 017</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Home</a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Features</a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Products</a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Categories</a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Review</a>
+        </div>
+
+        <div class="box">
+            <h3>news letter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="Enter your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <img src="pay-cart2.png" class="payment-img" alt="">
+        </div>
+    </div> 
+    <div class="credit"> created by <span> web designer </span> paramasivam</div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
